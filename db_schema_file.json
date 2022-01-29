@@ -1,0 +1,48 @@
+{
+    "name": "df",
+    "columns":
+    [
+        {
+        "name": "church_branch_id",
+        "keywords": ["church branch", "branch id", "church id"]
+        },
+        {
+        "name": "first_name",
+        "keywords": ["firstname", "first name", "given name"]
+        },
+        {
+        "name": "last_name",
+        "keywords": ["lastname", "last name", "surname"]
+        },
+        {
+        "name": "middle_name",
+        "keywords": ["middlename", "middle name"],
+        "mapping":{
+            "None": ["empty", "None", "not filled"]
+        }
+        },
+        {
+        "name": "email",
+        "keywords": ["email", "emails", "e-mail"]
+        },
+        {
+        "name": "created_at",
+        "keywords": ["registered date", "date created", "registered on", "created on"]
+        },
+        {
+        "name": "is_verified",
+        "keywords": ["verified", "verification"],
+        "mapping":{
+            "True": ["are verified", "done verfication", "is verified"],
+            "False": ["are not verified", " not done verfication", "is not verified"]
+        }
+        },
+        {"name": "is_staff",
+        "keywords": ["staff", "staffs"],
+        "mapping":{
+            "True": ["are staffs", "is a staff"],
+            "False": ["are not staffs", "is not a staff"]
+        }
+    }
+    ]
+}
